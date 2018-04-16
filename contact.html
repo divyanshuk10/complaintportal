@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<title>Contact</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!--navigation-->
+		<div class="container">
+			<nav class="nav nav-pills p-1">
+			<a class="nav-item nav-link" id="logo" href="index.html"><span id="orange">Compl</span>aint<span id="green">.com</span></a>
+				<span class="col-1"></span>
+				<a class="nav-item nav-link" href="index.html">Home</a>
+				<a class="nav-item nav-link" href="about.html">About</a>
+				<a class="nav-item nav-link active" href="contact.html">Contact</a>
+				<a class="nav-item nav-link" href="login.html">Login</a>
+				<a class="nav-item nav-link" href="register.html">Register</a>
+				<span class="col-2 "></span>
+				<a class="nav-item nav-link btn btn-warning" href="#">File a complaint</a>
+				<a class="nav-item nav-link btn btn-info ml-1" href="#">Suggestion</a>
+			</nav>
+		</div>
+		<div class="row p-3">
+				<div class="col ">
+
+					<h1 class="display-4 text-center"> Contact us</h1>
+					
+
+				</div>
+			</div>
+		
+		<div class="container">
+			<div class="row"> 
+				<div class="col p-5">
+					<address>
+						<strong>Complaint, Inc.</strong>
+						<br>
+						TCS ION, Noida sec-15
+						<br>
+						Uttar Pradesh, IN 201009
+						<br>
+						P: 9540328181
+					</address>
+					<address>
+						<a href="mailto:#">divyanshuk10@gmail.com</a>
+					</address>
+				
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="container">
+			
+			<div class="row p-3">
+				<div class="col">
+					<p>Have query? We are here to help you</p>
+					<form method="post" action="contact" id="contactform" class="p-5 needs-validation">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputName">Name</label>
+								<input type="text" class="form-control" id="inputName" placeholder="Name" name="name" required>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="inputEmail">Email</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
+							</div>
+
+						</div>
+						<div class="form-group">
+							<label for="inputMobile">Mobile</label>
+							<input type="number" class="form-control" id="inputMobile" name="mobile" min="0" placeholder="Mobile">
+							<small id="passwordHelpBlock" class="form-text text-info">
+								Optional</small>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputCity">City</label>
+								<input type="text" class="form-control" name="city" id="inputCity" placeholder="City" required>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">State</label>
+								<input type="text" class="form-control" id="inputState" name="state" placeholder="State" required>
+							</div>
+							<div class="form-group col-md-2">
+								<label for="inputZip">Zip</label>
+								<input type="text" class="form-control" id="inputZip" name="pincode" placeholder="Pincode" required>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputMesssage">Message</label>	
+							<textarea class="form-control text-left" id="inputMesssage" rows="4" maxlength="150" name="message" placeholder="Type your Message"></textarea>
+						</div>
+						<input type="submit" class="btn btn-primary " value="Submit query">
+					</form>
+
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</div>
+</body>
+
+</html>

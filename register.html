@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<title>Home</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!--navigation-->
+		<div class="container">
+			<nav class="nav nav-pills p-1">
+				<a class="nav-item nav-link" id="logo" href="index.html"><span id="orange">Compl</span>aint<span id="green">.com</span></a>
+				<span class="col-1"></span>
+				<a class="nav-item nav-link" href="#">Home</a>
+				<a class="nav-item nav-link" href="about.html">About</a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+				<a class="nav-item nav-link" href="login.html">Login</a>
+				<a class="nav-item nav-link active" href="register.html">Register</a>
+				<span class="col-2 "></span>
+				<a class="nav-item nav-link btn btn-warning" href="#">File a complaint</a>
+				<a class="nav-item nav-link btn btn-info ml-1" href="#">Suggestion</a>
+			</nav>
+		</div>
+
+		<div class="container mt-3">
+			<div class="row p-5 mt-3">
+				<div class="mx-auto p-3" id="register">
+					<h2 class="text-center">Create a new account</h2>
+					<form action="Register" method="post">
+						<div class="row p-1">
+							<div class="col">
+								<input type="text" name="fname" class="form-control" placeholder="First name" required>
+							</div>
+							<div class="col">
+								<input type="text" name="lname" class="form-control" placeholder="Last name" required>
+							</div>
+						</div>
+
+						<div class="row p-1">
+							<div class="col">
+								<select class="custom-select" required>
+  									<option disabled selected value="">Month</option>
+  									<option value="1">January</option>
+ 									<option value="2">February</option>
+ 									<option value="3">March</option>
+									<option value="4">April</option>
+									<option value="5">May</option>
+									<option value="6">June</option>
+									<option value="7">July</option>
+									<option value="8">August</option>
+									<option value="9">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							</div>
+							<div class="col">
+								<input type="number" name="day" class="form-control" placeholder="Day" min="1" max="31" required>
+							</div>
+							<div class="col">
+								<input type="number" name="year" class="form-control" placeholder="Year" min="1925" max="2018" required>
+							</div>
+						</div>
+
+
+						<div class="row p-1">
+							<div class="col">
+								<input type="email" name="email" class="form-control" placeholder="Email id" required>
+							</div>
+						</div>
+						<div class="row p-1">
+							<div class="col">
+								<input type="password" name="password" class="form-control" placeholder="password" required>
+								<small id="passwordHelpBlock" class="form-text text-muted">
+  									Your password must be 8-20 characters long</small>
+							</div>
+						</div>
+						<div class="row p-1">
+							<div class="col">
+								<input type="password" name="passwordConfirm" class="form-control" placeholder="Retype your password" required>
+							</div>
+						</div>
+						<div class="row p-1">
+							<div class="col">
+								<input class="form-check-inline" type="radio" name="gender" id="male" value="Male" required>
+								<label class="form-check-label" for="male">Male</label>
+							</div>
+							<div class="col">
+								<input class="form-check-inline" type="radio" name="gender" id="female" value="female" required>
+								<label class="form-check-label" for="female">Female</label>
+							</div>
+							<div class="col">
+								<input class="form-check-inline" type="radio" name="gender" id="other" value="other" required>
+								<label class="form-check-label" for="other">Other</label>
+							</div>
+						</div>
+						<div class="row p-1 ">
+							<div class="mx-auto">
+								<input class="form-check-inline btn btn-primary" type="submit" value="Submit">
+							
+								<input class="form-check-inline btn btn-outline-secondary" type="Reset" value="Reset">
+							</div>
+						</div>
+						
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
