@@ -26,7 +26,7 @@
 	border-radius: 7px;
 	
 }
-#login, #register{
+#login, #register,#file{
 	box-shadow:  0px 22px 120px -10px rgba(0, 0, 0, 0.49);
 	border: 20px solid;
 	border-top-color: #ff9933;
@@ -36,9 +36,19 @@
 	border-radius: 6px;
 }
 
+
 #orange{
 	color:#ff9933;
 }
 #green{
 	color:green;
 }
+
+#success{
+	background: #FF9933;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF9933, #fff,#138808); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: grey;
+
+}
+

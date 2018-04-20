@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<title>File it</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!--navigation-->
+		<div class="container">
+			<nav class="nav nav-pills p-1">
+				<a class="nav-item nav-link" id="logo" href="index.html"><span id="orange">Compl</span>aint<span id="green">.com</span></a>
+				<span class="col-1"></span>
+				<a class="nav-item nav-link" href="index.html">Home</a>
+				<a class="nav-item nav-link" href="about.html">About</a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+				<a class="nav-item nav-link" href="login.html">Login</a>
+				<a class="nav-item nav-link" href="register.html">Register</a>
+				<span class="col-2 "></span>
+				<a class="nav-item nav-link btn btn-warning active" href="fileacomplaint.html">File a complaint</a>
+				<a class="nav-item nav-link btn btn-info ml-1" href="suggestion.html">Suggestion</a>
+			</nav>
+			<div class="container mt-2">
+				<div class="row">
+					<div class="col mx-auto">
+						<h1 class="display-4 text-center" id="filehead">File your complaint</h1>
+
+					</div>
+				</div>
+			</div>
+			<div class="container" id="file">
+
+				<div class="row mt-3">
+					<div class="mx-auto">
+						<!--						form starts-->
+						<form class="p-5" action="Fileacomplaint" method="post">
+							<div class="form-group">
+								<label for="fname">First Name</label>
+								<input type="text" class="form-control" id="fname" name="fname" aria-describedby="emailHelp" placeholder="Enter first name" required>
+							</div>
+							<div class="form-group">
+								<label for="lname">Last Name</label>
+								<input type="text" class="form-control" id="lname" name="lname" aria-describedby="emailHelp" placeholder="Enter last name" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email id</label>
+								<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter Email id" required>
+							</div>
+							<div class="form-group">
+								<label for="mobile">Mobile</label>
+								<input type="number" class="form-control" id="mobile" name="mobile" aria-describedby="emailHelp" placeholder="Enter mobile number" >
+								<small id="passwordHelpBlock" class="form-text text-info">
+ 									Optional</small>
+							</div>
+							<div class="form-group form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="gender" value="male">
+								<label class="form-check-label" for="gender">Male</label>
+
+								<input class="form-check-input" type="radio" name="gender" id="gender" value="female">
+								<label class="form-check-label" for="gender">Female</label>
+
+								<input class="form-check-input" type="radio" name="gender" id="gender" value="other">
+								<label class="form-check-label" for="gender">Other</label>
+							</div>
+
+							<div class="form-group row">
+								<label for="exampleFormControlSelect1">Complaint Category</label>
+								<select class="form-control" id="exampleFormControlSelect1" required>
+									<option value="" selected disabled>-Select-</option>
+      								<option>Indian Railways</option>
+      								<option>Education System</option>
+      								<option>Indian Police</option>
+      								<option>People/Society</option>
+      								<option>Others</option>
+    							</select>
+							</div>
+							<div class="form-group">
+								<label for="complaint">Complaint</label>
+								<textarea class="form-control" id="complaint" rows="3" cols="50"></textarea>
+								<small id="passwordHelpBlock" class="form-text text-info">
+ 									max length 150 words</small>
+							</div>
+
+							<div class="form-group">
+								<input type="submit" value="Register Complaint" class="btn btn-info">
+							</div>
+
+
+						</form>
+						<!--						form ends-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
